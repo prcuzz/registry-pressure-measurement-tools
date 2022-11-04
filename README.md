@@ -64,3 +64,11 @@ Normally, we perform pressure-measurement of docker registry by executing `docke
 ## Refs
 
 * [openstack test plans](https://docs.openstack.org/developer/performance-docs/test_results/container_repositories/registry2/index.html)
+
+# After Fork
+
+修改了 clear.sh，使其只清理批量生成的 localhost:5000/test-1/nginx 镜像。
+
+修改了 test-repo-formal.py，把 registry 的地址固定为 localhost:5000，并同时测试 build_container, push_container, delete_local_images, pull_container 四个功能。
+
+添加了用于批量生成镜像的 dockerfile 和对应文件。
