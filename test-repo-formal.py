@@ -109,8 +109,8 @@ def fill_queue(iterations):
     for iteration in range(begin, (iterations + 1)):
         work_queue.put(iteration)
 
-#container_actions = [build_container, push_container, delete_local_images, pull_container]
-container_actions = [pull_container]
+container_actions = [build_container, push_container, delete_local_images, pull_container]
+#container_actions = [pull_container]
 
 for container_action in container_actions:
     fill_queue(iterations)
