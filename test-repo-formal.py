@@ -11,7 +11,7 @@ import argparse
 begin = 1
 iterations = 100
 concurrency = 100
-repo_address = "your-docker-registry-domain"
+repo_address = "localhost:5000"  # your-docker-registry-domain
 
 repo_ref = "/test-1"
 repo_url = repo_address + repo_ref
